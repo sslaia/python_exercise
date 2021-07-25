@@ -9,10 +9,11 @@ berat = float(input("Berat badan Anda dalam kg: "))
 tinggi = float(input("Tinggi Anda dalam cm:      "))
 
 bmi = berat / (tinggi/100) ** 2
+nilai = round(bmi, 2)
 
 print("\n\nTerima kasih.\n")
 print("Berikut hasil evaluasi indeks berat badan Anda:\n\n")
-print(f"Nilai indeks Anda: {round(bmi, 2)}")
+print("Nilai indeks Anda: " + str(nilai))
 
 if bmi < 18.50:
     print("Nampaknya Anda agak kekurusan")
